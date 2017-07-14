@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "892583149351",
+    "firebase_url": "https://squad-b2425.firebaseio.com",
+    "project_id": "squad-b2425",
+    "storage_bucket": "squad-b2425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892583149351:android:891cd40751a26332",
+        "android_client_info": {
+          "package_name": "com.jaylerrs.squad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892583149351-vkqmebtce68bve3o3i0npai4mnr9vdc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaylerrs.squad",
+            "certificate_hash": "8bf9315681a0890ba94d248c6f558994eb075f5f"
+          }
+        },
+        {
+          "client_id": "892583149351-viud33qcdujmkmtbln3f7hsmmn1vh0dj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLDvIzK_vr05aAFqbQN0rEwtmIKTE1Nfw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892583149351-viud33qcdujmkmtbln3f7hsmmn1vh0dj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
