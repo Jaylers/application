@@ -1,7 +1,9 @@
-package com.jaylerrs.squad;
+package com.jaylerrs.squad.splash;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.jaylerrs.squad.R;
 
 import butterknife.ButterKnife;
 
