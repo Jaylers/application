@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.jaylerrs.squad.R;
 
 
 public class BaseActivity extends AppCompatActivity {
@@ -15,7 +14,7 @@ public class BaseActivity extends AppCompatActivity {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(this);
             mProgressDialog.setCancelable(false);
-            mProgressDialog.setMessage(getString(R.string.message_loading));
+            mProgressDialog.setMessage("Loading...");
         }
 
         mProgressDialog.show();

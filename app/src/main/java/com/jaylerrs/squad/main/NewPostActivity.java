@@ -20,6 +20,8 @@ import com.jaylerrs.squad.main.models.User;
 import java.util.HashMap;
 import java.util.Map;
 
+;
+
 public class NewPostActivity extends BaseActivity {
 
     private static final String TAG = "NewPostActivity";
@@ -92,7 +94,7 @@ public class NewPostActivity extends BaseActivity {
                                     Toast.LENGTH_SHORT).show();
                         } else {
                             // Write new post
-                            writeNewPost(userId, user.username, title, body);
+                            writeNewPost(userId, user.getUsername(), title, body);
                         }
 
                         // Finish this Activity, back to the stream

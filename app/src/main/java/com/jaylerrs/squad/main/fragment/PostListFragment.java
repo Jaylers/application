@@ -23,6 +23,7 @@ import com.jaylerrs.squad.R;
 import com.jaylerrs.squad.main.PostDetailActivity;
 import com.jaylerrs.squad.main.models.Post;
 import com.jaylerrs.squad.main.viewholder.PostViewHolder;
+import com.jaylerrs.squad.utility.sharedstring.FirebaseTag;
 
 
 public abstract class PostListFragment extends Fragment {
@@ -97,8 +98,8 @@ public abstract class PostListFragment extends Fragment {
                     @Override
                     public void onClick(View starView) {
                         // Need to write to both places the post is stored
-                        DatabaseReference globalPostRef = mDatabase.child("posts").child(postRef.getKey());
-                        DatabaseReference userPostRef = mDatabase.child("user-posts").child(model.uid).child(postRef.getKey());
+                        DatabaseReference globalPostRef = mDatabase.child(FirebaseTag.post).child(postRef.getKey());
+                        DatabaseReference userPostRef = mDatabase.child(FirebaseTag.user_post).child(model.uid).child(postRef.getKey());
 
                         // Run two transactions
                         onStarClicked(globalPostRef);

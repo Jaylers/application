@@ -33,7 +33,7 @@
             android:name=".main.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
-            android:theme="@style/FullscreenNoActionBar" />
+            android:theme="@style/AppTheme" />
 
         <activity android:name=".users.ProfileActivity"
             android:screenOrientation="portrait"/>

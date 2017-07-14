@@ -7,6 +7,7 @@ package com.jaylerrs.squad.utility.sharedstring;
 public class FirebaseTag {
     public static String users  =                       "users";
     public static String user_post  =                   "user-posts";
+    public static String post =                         "posts";
 
     public static String user_username =                "username";
     public static String user_email =                   "email";
