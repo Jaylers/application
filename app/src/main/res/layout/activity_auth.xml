@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_auth_base"
+    android:background="@drawable/img_bike_background"
+    android:alpha="0.9"
+    tools:context="com.jaylerrs.squad.auth.AuthActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relate_auth_verify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_mid_alpha"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_verify_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_verify_title"
+            android:text="@string/ver_message_title"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_verify_detail"
+            android:layout_below="@+id/txt_verify_title"
+            android:text="@string/ver_message_detail"
+            android:padding="20dp"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@color/grey_300"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_verify_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ver_message_log_out"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_verify_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ver_message_verify_email"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_auth_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_huge_alpha"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_sign_in_title"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:text="@string/auth_message_user_gmail"/>
+
+        <ImageView
+            android:id="@+id/img_google_logo"
+            android:layout_below="@+id/txt_sign_in_title"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_google"/>
+
+        <TextView
+            android:id="@+id/txt_sign_in_message"
+            android:layout_below="@+id/img_google_logo"
+            android:layout_margin="10dp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@color/color_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/img_sign_in_google"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/img_google_btn"
+            android:layout_below="@+id/txt_sign_in_message"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btn_auth_switch_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_overlay"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:text="@string/auth_message_user_email"/>
+    </RelativeLayout>
+
+</LinearLayout>
