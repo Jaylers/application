@@ -6,17 +6,24 @@ import com.google.firebase.database.IgnoreExtraProperties;
 @IgnoreExtraProperties
 public class User {
 
-    public String username;
     public String email;
+    public String username;
+    public String birthDate;
+    public String weight;
+    public String height;
+    public Boolean privacy;
 
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public User(String username, String email) {
-        this.username = username;
+    public User(String email, String username, String birthDate, String weight, String height, Boolean privacy) {
         this.email = email;
+        this.username = username;
+        this.birthDate = birthDate;
+        this.weight = weight;
+        this.height = height;
+        this.privacy = privacy;
     }
-
 }
 // [END blog_user_class]
